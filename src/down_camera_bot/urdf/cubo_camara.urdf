@@ -21,6 +21,10 @@
     </inertial>
   </link>
 
+  <gazebo reference="base_link">
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+
   <link name="camera_link"/>
 
   <joint name="camera_joint" type="fixed">
@@ -34,7 +38,7 @@
        <pose>0 0 0 0 0 0</pose>
        <visualize>true</visualize>
        <always_on>true</always_on>
-       <update_rate>5</update_rate>
+       <update_rate>50</update_rate> 
        <camera name="downward_cam">
          <horizontal_fov>1.3962634</horizontal_fov>
          <image>
@@ -49,10 +53,31 @@
        </camera>
        <topic>/camera/image_raw</topic>
      </sensor>
+     <sensor name="downward_depth_camera" type="depth_camera">
+       <pose>0 0 0 0 0 0</pose>
+       <visualize>true</visualize>
+       <always_on>true</always_on>
+       <update_rate>50</update_rate>
+       <camera name="downward_depth_cam">
+         <horizontal_fov>1.3962634</horizontal_fov>
+         <image>
+           <width>800</width>
+           <height>800</height>
+         </image>
+         <clip>
+           <near>0.02</near>
+           <far>300</far>
+         </clip>
+       </camera>
+       <topic>/camera/depth/image_raw</topic>
+     </sensor>
    </gazebo>
 
    <gazebo>
-       <static>true</static>
-    </gazebo>
+       <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+           <topic>/cmd_vel</topic>
+           <initial_linear>0 0 0</initial_linear>
+       </plugin>
+   </gazebo>
 
 </robot>

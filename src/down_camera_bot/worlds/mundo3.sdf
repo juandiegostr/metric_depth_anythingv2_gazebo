@@ -1,0 +1,377 @@
+<sdf version='1.10'>
+  <world name='default'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>300 300</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>300 300</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <include>
+      <uri>file:///home/jd/ros2_ws_gazebo/install/down_camera_bot/share/down_camera_bot/urdf</uri>
+      <name>cubo_camara</name>
+      <pose>132.05746175387085 0 45 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment</name>
+      <pose>55.362140655517578 35.423198699951172 0 0 0 1.6234100069207307</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_2</name>
+      <pose>63.463158726135447 -27.110373668586742 0 0 0 1.623410025344574</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_2_1</name>
+      <pose>92.944481509141241 -27.158003542774363 0 0 0 1.623410025344574</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_2_1_1</name>
+      <pose>123.44331303505513 -27.557660454701345 0 0 0 1.623410025344574</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_1</name>
+      <pose>84.209058171842202 36.017136955181464 0 0 0 1.623410025344574</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_1_1</name>
+      <pose>114.98339773380644 36.726707677160448 0 0 0 1.623410025344574</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/radio tower/3</uri>
+      <name>radio_tower</name>
+      <pose>40.223819212290309 -20.871846920304364 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/radio tower/3</uri>
+      <name>radio_tower_0</name>
+      <pose>141.72050856719375 20.624463752268184 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/water tower/3</uri>
+      <name>water_tower</name>
+      <pose>33.474098205566406 25.883476257324219 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/water tower/3</uri>
+      <name>water_tower_0</name>
+      <pose>143.05320961370609 2.1480293494619662 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire station/3</uri>
+      <name>fire_station</name>
+      <pose>93.137205356756098 6.1276378046492663 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/police station/3</uri>
+      <name>police_station</name>
+      <pose>53.811113179318099 7.1676889943114954 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/asphalt plane/3</uri>
+      <name>asphalt_plane</name>
+      <pose>16.235014978978988 6.2496408728909403 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/asphalt plane/3</uri>
+      <name>asphalt_plane_0</name>
+      <pose>-3.1296504477810281 6.1789933281635303 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback_2/4</uri>
+      <name>hatchback</name>
+      <pose>19.007280080991613 12.604836762039323 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback_2/4</uri>
+      <name>hatchback_0</name>
+      <pose>11.059159395028928 12.521116810417825 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire truck/3</uri>
+      <name>fire_truck</name>
+      <pose>0.97889399528503418 8.3899097442626953 0 0 0 -1.5531363996041865</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/ambulance2/2</uri>
+      <name>Ambulance2</name>
+      <pose>-7.723719792264113 13.338018036339591 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/ambulance2/2</uri>
+      <name>Ambulance2_0</name>
+      <pose>7.7399702072143555 0.41718599200248718 0 0 0 3.119712639097127</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback_1</name>
+      <pose>-2.6022400856018066 0.82508301734924316 0 0 0 -3.1338628005408427</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed police station/3</uri>
+      <name>collapsed_police_station</name>
+      <pose>20.546360946470507 -23.103713701002121 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed fire station/3</uri>
+      <name>collapsed_fire_station</name>
+      <pose>-3.7602611000013866 -17.154079415849392 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree</name>
+      <pose>33.395660884913582 37.749756417092065 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree</name>
+      <pose>26.455203902990739 36.899637021956345 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_0</name>
+      <pose>20.013212047400771 34.735146688761979 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_1</name>
+      <pose>23.916831439261983 28.384942482438262 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_2</name>
+      <pose>16.449932782017839 26.60479097980669 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_3</name>
+      <pose>39.462380050406878 15.817563773570162 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_0</name>
+      <pose>41.551552648837088 5.2530243833280466 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_4</name>
+      <pose>35.422510457483142 -4.271734394531955 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_5</name>
+      <pose>-5.2464204551399654 25.34256420733826 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_6</name>
+      <pose>6.8798522305496661 35.1259996920937 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_7</name>
+      <pose>7.033258813305892 22.742186779077151 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_8</name>
+      <pose>117.00734921503454 68.432387630639653 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_9</name>
+      <pose>102.48793642393031 64.967321643955074 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed industrial building/3</uri>
+      <name>collapsed_industrial</name>
+      <pose>63.884201049804688 56.699592590332031 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed house/4</uri>
+      <name>collapsed_house</name>
+      <pose>38.688097109214951 -44.056896385201199 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed industrial building/3</uri>
+      <name>collapsed_industrial_0</name>
+      <pose>113.20738703832582 -7.2942735050451208 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_10</name>
+      <pose>53.096092638508608 -7.2847800885764986 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_11</name>
+      <pose>32.806986433229561 -30.174253803173627 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_12</name>
+      <pose>112.46324445676542 -48.572106743417777 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_13</name>
+      <pose>54.210117796101756 -43.973586811630334 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_14</name>
+      <pose>73.632199530031485 -47.038271341724489 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_15</name>
+      <pose>96.403593097894472 -49.365822698504928 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_16</name>
+      <pose>74.172779367029065 17.280715816741367 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing</name>
+      <pose>76.910312714933397 7.8771105066097249 -3.1673366467782627e-11 4.440892098500626e-22 3.3736726459481541e-21 -1.2820113231172995e-21</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_0</name>
+      <pose>79.238694232114227 2.1687762472333914 -3.1673366466047907e-11 5.2145787687862829e-21 1.820680425390028e-21 -8.2717428513736804e-22</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_1</name>
+      <pose>70.857728363022972 11.141137260793046 -3.1673366467782627e-11 8.7777007884426447e-22 -9.6268692884416134e-22 1.1510838300308463e-22</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_2</name>
+      <pose>45.88645489691374 4.6238320137866342 -3.1673366467782627e-11 4.440892098500626e-22 3.3736726459481541e-21 -1.2820113231172995e-21</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_3</name>
+      <pose>45.402645120540356 2.0815031137422282 -3.1673366466047907e-11 5.2145787687862829e-21 1.820680425390028e-21 -8.2717428513736804e-22</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_4</name>
+      <pose>34.235615305081652 15.724586610763108 -3.1673366467782627e-11 8.7777007884426447e-22 -9.6268692884416134e-22 1.1510838300308463e-22</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_5</name>
+      <pose>21.49599641561095 15.499666203291524 0.049999169272191599 -1.9895739821032428e-08 5.2292064019633335e-09 3.3827109886623012e-09</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_6</name>
+      <pose>12.269725662227042 -8.5807640626820358 -3.1673366467782627e-11 8.7777007884426447e-22 -9.6268692884416134e-22 1.1510838300308463e-22</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_7</name>
+      <pose>3.6599396708208474 25.509812099410983 -3.1673366467782627e-11 3.4798552928094757e-21 -1.3825096273361605e-22 -1.2841284354037314e-21</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_8</name>
+      <pose>26.696475868479212 22.575211171037004 -3.1673366467782627e-11 3.4798552928094757e-21 -1.3825096273361605e-22 -1.2841284354037314e-21</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_9</name>
+      <pose>40.639640295595825 50.123789288526957 -3.1673366469517348e-11 4.440892098500626e-22 2.4414856012514303e-21 -8.8138597320123619e-22</pose>
+    </include>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>

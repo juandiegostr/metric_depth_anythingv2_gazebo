@@ -8,7 +8,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     pkg_path = get_package_share_directory('down_camera_bot')
     urdf_file = os.path.join(pkg_path, 'urdf', 'cubo_camara.urdf')
-    world_file = os.path.join(pkg_path, 'worlds', 'camera.sdf')
+    world_file = os.path.join(pkg_path, 'worlds', 'camera.sdf') #mundo1.sdf | camera.sdf | mundo2.sdf
     
     # Leer contenido del URDF para robot_state_publisher
     with open(urdf_file, 'r') as f:
@@ -33,16 +33,19 @@ def generate_launch_description():
         Node(
             package='ros_gz_sim',
             executable='create',
-            arguments=['-name', 'cubo_camara', '-file', urdf_file, '-x', '0', '-y', '0', '-z', '30.0'],
+            arguments=['-name', 'cubo_camara', '-file', urdf_file, '-x', '0', '-y', '0', '-z', '45.0'],
             output='screen'
         ),
-        # Puente traductor ROS 2 <-> Gazebo para la cámara
+        # Puente traductor ROS 2 <-> Gazebo para la cámara y cmd_vel
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
             arguments=[
                 '/camera/image_raw@sensor_msgs/msg/Image[gz.msgs.Image',
-                '/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo'
+                '/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
+                '/camera/depth/image_raw@sensor_msgs/msg/Image[gz.msgs.Image',
+                '/camera/depth/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
+                '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist'
             ],
             output='screen'
         )

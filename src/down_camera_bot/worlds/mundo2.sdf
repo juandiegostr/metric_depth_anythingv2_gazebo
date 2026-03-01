@@ -1,0 +1,1288 @@
+<sdf version='1.10'>
+  <world name='default'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch</name>
+      <pose>4.3913748527989469 3.8663693900411058 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_0</name>
+      <pose>4.310228220630254 -11.084394961418944 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_1</name>
+      <pose>4.3102301558997844 -25.057609919789481 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_2</name>
+      <pose>4.261796152362308 18.605321489460827 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_3</name>
+      <pose>18.586400652311475 18.61741497124698 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_4</name>
+      <pose>18.723816591538032 4.4042204320163814 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_5</name>
+      <pose>18.573389576822514 -9.5416876976639244 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_6</name>
+      <pose>18.379472107227429 -24.350638184899438 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_7</name>
+      <pose>32.663024696806417 18.428011673733423 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_8</name>
+      <pose>32.567856660319691 4.3531052838416446 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_9</name>
+      <pose>32.358828069873667 -10.15977279423031 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_10</name>
+      <pose>32.396166517510935 -24.678591911558303 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_11</name>
+      <pose>46.60805983969496 18.251914404721227 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_12</name>
+      <pose>46.204834029001809 3.8936197705978586 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_13</name>
+      <pose>45.989395871869519 -10.627989913108337 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_14</name>
+      <pose>46.325755601116022 -24.834978886676982 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_15</name>
+      <pose>46.204903750663803 32.475579336058296 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_16</name>
+      <pose>31.826048200503166 32.670424283622886 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_17</name>
+      <pose>45.918021270056371 -38.022787485000066 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_18</name>
+      <pose>45.917001279945687 -52.353262782373314 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_19</name>
+      <pose>31.403731108976679 -37.887793808384941 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_20</name>
+      <pose>31.52260872601148 -52.567167109955314 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_21</name>
+      <pose>16.70009925587491 -38.836233392116696 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_22</name>
+      <pose>17.108836278439888 -52.475545197841363 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_23</name>
+      <pose>3.4235579179114346 -38.962553156665074 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_24</name>
+      <pose>3.4722796964224987 -52.036946520654396 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_25</name>
+      <pose>17.206996720570324 32.931475878044928 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_26</name>
+      <pose>3.9859658714589568 32.764550931996325 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_27</name>
+      <pose>46.637705007683913 47.395325494921153 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_28</name>
+      <pose>32.663519349993337 46.537064950541726 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_29</name>
+      <pose>18.528959194996776 46.842781360594977 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_30</name>
+      <pose>60.460455176245134 47.059432052252767 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_31</name>
+      <pose>59.535379966915876 32.91000783065634 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_32</name>
+      <pose>59.615890001900119 18.217347367416398 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_33</name>
+      <pose>59.406491263306862 3.6423094868139145 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_34</name>
+      <pose>59.012592402570448 -10.117188438536846 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_35</name>
+      <pose>59.494455732950897 -23.109821776375597 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_36</name>
+      <pose>59.42826746939771 -37.533377354740821 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_37</name>
+      <pose>59.001676803386601 -51.372181842771091 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_38</name>
+      <pose>60.672714726320578 61.379061764821508 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_39</name>
+      <pose>47.059387921247577 60.402689634616749 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_40</name>
+      <pose>33.375906632413113 59.966072709979592 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_41</name>
+      <pose>19.870301069893191 60.891979798617072 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_42</name>
+      <pose>73.655935600076845 60.827992542016212 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_43</name>
+      <pose>73.316150447419631 46.925074424856632 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_44</name>
+      <pose>73.384339320196176 33.368152733727193 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_45</name>
+      <pose>73.069199591125567 18.450163464722699 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_46</name>
+      <pose>73.008074674546918 4.2775810186791281 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_47</name>
+      <pose>72.830617437995571 -10.322113378289336 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_48</name>
+      <pose>72.387390590414242 -24.223588718612259 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_49</name>
+      <pose>72.231207973804089 -38.044046327667175 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_50</name>
+      <pose>72.247169894610636 -51.603281138524054 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_51</name>
+      <pose>73.836338139073476 74.168611828671729 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_52</name>
+      <pose>59.144725233117015 75.895156382876308 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_53</name>
+      <pose>49.37800355735812 75.148707714859086 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_54</name>
+      <pose>38.274723365526079 75.166121798603001 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_55</name>
+      <pose>73.024653579019954 88.408831970818113 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_56</name>
+      <pose>58.421171856956377 90.095237439499527 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_57</name>
+      <pose>44.279004079161837 89.775674940462167 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_58</name>
+      <pose>85.998100344468327 88.598887054427564 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_59</name>
+      <pose>85.954838178945977 73.985093473792759 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_60</name>
+      <pose>85.784230338518512 60.328780672205703 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_61</name>
+      <pose>85.762547535116624 45.863039868815918 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_62</name>
+      <pose>85.594459016009722 31.489704601599765 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_63</name>
+      <pose>85.428075106894667 16.88657237664853 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_64</name>
+      <pose>85.613177872473074 2.1652378662576872 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_65</name>
+      <pose>86.010209588121995 -12.327996316123212 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_66</name>
+      <pose>85.432158764622983 -26.36164916330636 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_67</name>
+      <pose>84.988420201446132 -39.9420425947458 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_68</name>
+      <pose>85.448019713214535 -53.487125233264081 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_69</name>
+      <pose>84.726938736346 -66.195900028637823 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_70</name>
+      <pose>70.265114493647971 -65.56639981803167 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_71</name>
+      <pose>57.118097105356512 -65.607541679341907 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_72</name>
+      <pose>42.388906792438725 -66.263033445589514 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_73</name>
+      <pose>33.191705942919484 -64.478196156965936 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_74</name>
+      <pose>20.719621809215752 -66.057536510068928 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_75</name>
+      <pose>6.5487042391304433 -66.184912341305804 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_76</name>
+      <pose>84.869788528912139 -80.728075704258003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_77</name>
+      <pose>84.32417051363268 -94.814237219905664 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_78</name>
+      <pose>70.571064463539642 -80.093759510768123 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_79</name>
+      <pose>56.729891035203572 -80.538490575268455 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_80</name>
+      <pose>70.079877784862873 -94.665887815675461 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_81</name>
+      <pose>55.413388944401952 -95.26886759265625 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_82</name>
+      <pose>42.21965391396698 -79.931645283765278 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_83</name>
+      <pose>42.995550540607738 -94.537699219256169 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_84</name>
+      <pose>28.897174796072317 -78.945724706570999 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_85</name>
+      <pose>14.771099664256136 -80.396702247822759 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_86</name>
+      <pose>4.1378175636752097 -79.7346714925458 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_87</name>
+      <pose>29.536472332076048 -93.706504887602534 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_88</name>
+      <pose>16.057558206695479 -94.379319221800984 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_89</name>
+      <pose>4.2703615151961447 -94.239667283643428 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_90</name>
+      <pose>98.195640033688932 88.32409435451433 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_91</name>
+      <pose>98.020069169944236 74.126144798109493 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_92</name>
+      <pose>98.220187582291771 59.915007935823695 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_93</name>
+      <pose>99.154389722620792 45.72321261831955 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_94</name>
+      <pose>99.131116887171373 31.107941812347299 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_95</name>
+      <pose>98.616556869019433 17.06396961551069 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_96</name>
+      <pose>98.932915431824711 2.9137626205038174 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_97</name>
+      <pose>99.0192004157893 -11.190692190496431 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_98</name>
+      <pose>98.779918713996423 -24.975376334492314 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_99</name>
+      <pose>98.877180970224515 -39.217249853476268 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_100</name>
+      <pose>99.178623280954355 -54.088032681727405 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_101</name>
+      <pose>99.220971764355539 -67.698508397508448 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_102</name>
+      <pose>99.519888736256917 -81.141925165549921 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_103</name>
+      <pose>98.522810218004565 -94.697174462691393 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_104</name>
+      <pose>110.69548608011135 87.820455098912106 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_105</name>
+      <pose>110.35018321140549 73.366045920413228 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_106</name>
+      <pose>109.98740870963294 100.20627049784994 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_107</name>
+      <pose>110.82814383777443 59.708976332373823 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_108</name>
+      <pose>110.62762607573629 45.243887999423904 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_109</name>
+      <pose>110.84703363217508 30.526058181358039 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_110</name>
+      <pose>110.50463527044337 16.129036118176636 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_111</name>
+      <pose>110.02656971686625 2.0847360077680328 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_112</name>
+      <pose>109.715184668809 -12.39708886055648 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_113</name>
+      <pose>108.85283507342569 -27.575781815160514 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_114</name>
+      <pose>110.97105548003162 -21.419165458408528 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_115</name>
+      <pose>111.32964499988364 -36.586075010309003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_116</name>
+      <pose>110.62562801505835 -49.514075879593697 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_117</name>
+      <pose>110.34414095626713 -62.641708047244933 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_118</name>
+      <pose>110.03868044981301 -75.803223804892639 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_119</name>
+      <pose>109.9253190904773 -88.775904735465971 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_120</name>
+      <pose>109.64833843303848 -101.9323324012267 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_121</name>
+      <pose>94.643267695765246 -108.06593504469387 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_122</name>
+      <pose>108.52751074285322 -115.94201774177843 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_123</name>
+      <pose>94.586361369608909 -122.82628706897763 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_124</name>
+      <pose>123.83832378565356 100.60111203563598 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_125</name>
+      <pose>124.9439125068096 86.242321306343825 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_126</name>
+      <pose>124.3911275118453 71.662397155357993 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_127</name>
+      <pose>125.05448753235412 58.934329083394147 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_128</name>
+      <pose>125.01248960686608 45.867366230986214 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_129</name>
+      <pose>125.23327613706775 31.295970138104259 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_130</name>
+      <pose>124.79171672980101 18.090640489673394 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_131</name>
+      <pose>125.05449089442469 3.5444474607316145 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_132</name>
+      <pose>124.01900108312141 -11.507509708664813 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_133</name>
+      <pose>123.02548075978598 -1.6690564022561265 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_134</name>
+      <pose>125.38615709042929 -26.679527682800163 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_135</name>
+      <pose>124.72280756306611 -40.67901955149371 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_136</name>
+      <pose>125.38615698206542 -32.760255204137422 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_137</name>
+      <pose>124.05946123592481 -21.566189996302285 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_138</name>
+      <pose>124.76441139484454 -55.863783756340695 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_139</name>
+      <pose>123.87857812610493 -68.805178242303072 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_140</name>
+      <pose>126.757532642603 -53.040210178967079 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_141</name>
+      <pose>123.10347626852393 -83.891931475613475 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_142</name>
+      <pose>134.56524687972473 -77.957142274023951 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_143</name>
+      <pose>134.45434612391136 -64.663140551500689 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_144</name>
+      <pose>136.22872706189059 -51.188937570034327 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_145</name>
+      <pose>136.45051150745502 -38.976199263715756 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_146</name>
+      <pose>137.33770953031481 -25.737651732634781 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_147</name>
+      <pose>137.22681254163729 -11.653498959503876 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_148</name>
+      <pose>137.00502732975656 1.3909743114762598 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_149</name>
+      <pose>0 14.3384 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_150</name>
+      <pose>139.33388710404313 27.8542105488552 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_151</name>
+      <pose>139.00118223637327 41.42545680955277 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_152</name>
+      <pose>139.33388781546546 53.374807909982579 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_153</name>
+      <pose>139.00120785878704 65.324160645070933 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_154</name>
+      <pose>139.66659104431827 77.536885125003153 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_155</name>
+      <pose>138.27328357789145 90.740735960321516 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/hexarotor/models/grasspatch/1</uri>
+      <name>grasspatch_156</name>
+      <pose>138.76304922326082 14.200983055028448 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment</name>
+      <pose>50.581170842194645 36.392026237628038 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_0</name>
+      <pose>72.008657774960142 70.348925910310442 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_1</name>
+      <pose>51.771648406982422 -45.888469696044922 0 0 0 -1.5301900230372578</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/house 2/3</uri>
+      <name>House 2</name>
+      <pose>25.027799606323242 -29.508583068847656 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/house 2/3</uri>
+      <name>House 2_0</name>
+      <pose>12.109740257263184 -13.998473167419434 0 0 0 1.5907200617737371</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire station/3</uri>
+      <name>fire_station</name>
+      <pose>82.052779736022643 -43.693108995091585 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire station/3</uri>
+      <name>fire_station_0</name>
+      <pose>114.54330796767121 70.191047692453637 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/police station/3</uri>
+      <name>police_station</name>
+      <pose>23.769298606101156 32.667310849734505 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/police station/3</uri>
+      <name>police_station_0</name>
+      <pose>87.993417664442845 39.192991968639554 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/house 1/3</uri>
+      <name>House 1</name>
+      <pose>111.78922034889696 39.577372758243513 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/water tower/3</uri>
+      <name>water_tower</name>
+      <pose>95.021093212148699 -32.353680839223919 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/water tower/3</uri>
+      <name>water_tower_0</name>
+      <pose>71.803595170723966 32.823085425026839 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/gas station/3</uri>
+      <name>Gas Station</name>
+      <pose>28.091121450055937 5.5999977464905015 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall</name>
+      <pose>43.302898406982422 -5.7434301376342773 0 1.5849975728221382 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1</name>
+      <pose>52.843407782562075 -5.7319123264707024 -9.1664784478140415e-09 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1</name>
+      <pose>62.60803734508535 -5.7258407397760793 -1.8332958467287552e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_1</name>
+      <pose>72.357967026411586 -5.7936750994708452 -2.7499477538855954e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_1_1</name>
+      <pose>82.044628503458384 -5.8041296107223959 -3.6665978014188694e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_1_1_1</name>
+      <pose>91.42795410322185 -5.7036676060658591 -4.5832476681939571e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_1_1_1_1</name>
+      <pose>101.15640289310858 -5.8621057706053383 -5.4998978895465234e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback</name>
+      <pose>100.19829407505168 -7.6021336963713733 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback_0</name>
+      <pose>93.854183349568387 -7.2269584949886116 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/ambulance2/2</uri>
+      <name>Ambulance2</name>
+      <pose>85.474856826273552 -7.2082258608660776 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire truck/3</uri>
+      <name>fire_truck</name>
+      <pose>75.838897705078125 -7.2069602012634277 0 0 0 -1.5819757521627995</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree</name>
+      <pose>86.881841249321155 19.897620616743005 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_1</name>
+      <pose>92.194964041958883 19.187271238516747 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_1_1</name>
+      <pose>89.43148929811224 17.10473081284406 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_1_1_1</name>
+      <pose>92.708048324788379 16.774079088896222 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_1_1_1_1</name>
+      <pose>86.726304158610333 17.264718601807463 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree</name>
+      <pose>91.171762487898633 2.2710247193023601 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_0</name>
+      <pose>87.565676912936539 -15.769344452404672 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_1</name>
+      <pose>101.45747724964335 -14.332902538067135 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_2</name>
+      <pose>61.398024603122707 -31.446519180884501 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed industrial building/3</uri>
+      <name>collapsed_industrial</name>
+      <pose>52.846716716957829 -20.964737607696435 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_2</name>
+      <pose>51.946569378447876 10.019887442625105 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/apartment/3</uri>
+      <name>apartment_3</name>
+      <pose>122.51209791557268 -8.3581476905906698 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire station/3</uri>
+      <name>fire_station_1</name>
+      <pose>111.26004404728648 18.26283103940996 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/fire station/3</uri>
+      <name>fire_station_2</name>
+      <pose>118.20452880859375 -35.586856842041016 0 0 0 1.5649100054764888</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed industrial building/3</uri>
+      <name>collapsed_industrial_0</name>
+      <pose>82.202580210519542 -65.31078008123319 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed industrial building/3</uri>
+      <name>collapsed_industrial_1</name>
+      <pose>56.904707931851142 -68.477564064647339 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed industrial building/3</uri>
+      <name>collapsed_industrial_2</name>
+      <pose>46.859054403718929 65.3948964318962 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/collapsed industrial building/3</uri>
+      <name>collapsed_industrial_3</name>
+      <pose>76.278848565419423 10.534563261983241 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_2</name>
+      <pose>21.577921300805045 -6.5200454027917134 -9.1664784478140415e-09 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_3</name>
+      <pose>33.541374197165389 -5.7950422600127629 -9.1664784339362537e-09 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2</name>
+      <pose>73.42066911919197 -9.3594716138136391 -2.749947756661153e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2_1</name>
+      <pose>73.498020360645029 -13.153306663810081 -3.6665978014188694e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2_1_1</name>
+      <pose>73.602750447333747 -16.655405341391585 -4.5832476685409018e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2_1_1_1</name>
+      <pose>73.520162697065004 -20.189056652123565 -5.4998978964854173e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2_1_1_1_1</name>
+      <pose>73.239167761222902 -23.899361667283291 -6.4165477528521642e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2_1_1_1_1_1</name>
+      <pose>73.218427157808435 -27.694287547545869 -7.3331976307294822e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2_1_1_1_1_1_1</name>
+      <pose>73.201258220283975 -31.302029053588573 -8.2498474870962291e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/cutout wall/2</uri>
+      <name>cutout_wall_1_1_2_1_1_1_1_1_1_1</name>
+      <pose>73.284161877558134 -35.09676650404348 -9.1664980699651677e-08 1.5849999210869377 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback_1</name>
+      <pose>75.539840698242188 -13.861968040466309 0 0 0 -1.6195300710512877</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback_2</name>
+      <pose>70.341734449209881 -27.396801795647828 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback_3</name>
+      <pose>70.440589597072474 -32.087313649109866 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/ambulance2/2</uri>
+      <name>Ambulance2_0</name>
+      <pose>71.597198486328125 -21.827999114990234 0 0 0 1.5764327166448797</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/ambulance2/2</uri>
+      <name>Ambulance2_1</name>
+      <pose>20.54787895149137 -7.95627537498076 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_3</name>
+      <pose>22.104092609261471 15.372206743504545 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_4</name>
+      <pose>15.904787937279215 12.907153386353905 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_5</name>
+      <pose>12.888186375630029 3.8437825488367263 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_0</name>
+      <pose>40.550218453342794 20.260078199910499 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_2</name>
+      <pose>37.823212573609339 19.836398463235568 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_3</name>
+      <pose>39.93459188274641 18.163713382172837 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_6</name>
+      <pose>34.459590911865234 -43.129100799560547 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_7</name>
+      <pose>35.630208857499234 -52.249641994328485 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_8</name>
+      <pose>43.315118080386853 -61.52472610904163 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_9</name>
+      <pose>131.49453014044212 8.2729056292991228 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_4</name>
+      <pose>120.80873237194918 10.510764579465071 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_5</name>
+      <pose>120.76228150518646 7.5845467594682727 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_6</name>
+      <pose>117.94644280812658 10.704539966585337 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_7</name>
+      <pose>118.15600080722791 7.8071371503702354 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_8</name>
+      <pose>115.43087497247473 -21.247530438691953 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_9</name>
+      <pose>113.53769035628062 -23.215340802200696 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_10</name>
+      <pose>106.55815363904094 -30.203122897958934 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/water tower/3</uri>
+      <name>water_tower_1</name>
+      <pose>92.426329614824695 67.088335916973321 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_11</name>
+      <pose>118.72161007295129 57.787144562458636 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/oak tree/7</uri>
+      <name>Oak tree_12</name>
+      <pose>110.69889337397441 56.904389331139633 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_10</name>
+      <pose>128.2359361822285 50.160756335861457 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_11</name>
+      <pose>127.00218140099585 46.966926008272729 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree_12</name>
+      <pose>122.58354352234301 50.123289412806173 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing</name>
+      <pose>74.931548280781939 -16.815220569942529 0.025972285581246375 -3.3659347729412651e-05 2.5024117961730924e-06 -4.5805091419154373e-06</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_0</name>
+      <pose>69.678163576812679 -23.670280291552281 0.025910931576045602 -3.7894656528509915e-05 1.6192976124078734e-06 -5.0493323693334024e-06</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_1</name>
+      <pose>70.85071769455628 -10.902208111580611 0.025807586312350615 -1.2587908436150147e-05 2.5595942886192519e-06 -1.9471142000259537e-06</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_2</name>
+      <pose>104.69289280366249 -6.3574513694955401 0.025428539575060669 -3.3979744975296873e-05 2.572730732525706e-06 -6.0666064044034346e-06</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_3</name>
+      <pose>97.497764110296217 -7.877225457081857 0.025388165388158586 -7.6081991936327846e-06 2.0217626345492171e-06 -7.9499525031288353e-07</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_4</name>
+      <pose>75.808534914000916 -35.992533823955675 0.02532880456139882 -3.4207687589109977e-05 4.4646132320070339e-06 -3.8784982580641242e-06</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_5</name>
+      <pose>54.839359203385591 -6.1305062967827579 0.025232772773678316 -3.8191164628992907e-05 3.0852096279003283e-06 -5.6708316698371671e-06</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_6</name>
+      <pose>57.894099323674276 -7.6388982638169578 0.025213098740665501 4.5401969934448928e-06 2.0658940219666034e-05 0.00027803933920547702</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/standing person/3</uri>
+      <name>person_standing_7</name>
+      <pose>45.197322151990562 -6.3862906985755385 0.025193419991060232 -0.00024967657840424789 3.6980166854789562e-05 -9.5714014321488716e-06</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback_4</name>
+      <pose>41.202017360356002 -7.0941673800948832 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/jd/.gz/fuel/fuel.gazebosim.org/openrobotics/models/hatchback copy/3</uri>
+      <name>hatchback_5</name>
+      <pose>34.949787139892578 -7.6899499893188477 0 0 0 0</pose>
+    </include>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
